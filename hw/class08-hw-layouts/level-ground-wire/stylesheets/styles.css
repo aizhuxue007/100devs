@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: rgba(102, 118, 138, 1);
+    --dark-blue: rgba(22, 31, 42 ,1);
+    --off-white: rgba(235, 235, 236, 1);
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(45, 46, 48, 1);
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.hero {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.black-text {
+    color: var(--black)
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.all-caps {
+    text-transform: uppercase;
+    margin-bottom: 0.75em;
+}
+
+nav {
+    padding: 1.5em 1.5em 1.5em 1em;
+    overflow: auto;
+}
+
+nav > * {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+nav > a {
+    float: right;
+}
+
+.donate-btn {
+    position: relative;
+    bottom: 0.5em;
+    width: fit-content;
+    text-align: center;
+    padding: 0.4em;
+    background: var(--white);
+    color: var(--blue);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.donate-btn:visited {
+    color: var(--blue)
+}
+
+.donate-btn:hover {
+    background: lightblue;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: var(--white);
+}
+
+a:hover {
+    color: skyblue;
+}
+
+.hero-intro {
+    padding-bottom: 4em;
+}
+
+.container {
+    width: 70%;
+    max-width: 700px;;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.9em;
+    text-align: center;
+}
+
+h1 + p {
+    margin-bottom: 2em;
+}
+
+.hero-intro__video-link:link,
+.hero-intro__video-link:visited {
+    color: rgba(247, 246, 233, 0.832);
+}
+
+.hero-intro__video-link:hover {
+    color: lightblue;
+}
+
+header ul li a {
+    float: left;
+}
+
+a {
+    margin-left: 1em;
+}
+
+.pad-y {
+    padding: 6em 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cards {
+    background: var(--off-white);
+    padding: 2.5em;
+    height: 100dvh;
+}
+
+.card {
+    width: 80%;
+    margin: 6em auto;
+}
+
+.card + .card {
+    margin-top: 2em;
+}
+
+footer {
+    background: var(--dark-blue);
+    padding: 2.5em;
+}
+
+.socials {
+    width: 30%;
+    height: 8dvh;
+    margin: 0 auto;
+}
+
+.socials li {
+    width: 33.3333%;
+    float: left;
+    padding: 0 auto;
+}
+
+.socials li i {
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.socials li a:visited {
+    color: lightblue;
+}
+
+figure ul {
+    width: 20%;
+    height: 1dvh;
+    margin: 1em auto;
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+.email {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.vertical-margins {
+    margin: 1.5em 0;
+}
+
+hr {
+    margin-bottom: 2em;
+}
+
+.img-container {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto 1.5em auto;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+
+.card,
+.card a:link,
+.card a:visited {
+    color: var(--black);
+}
+
+figcaption {
+    font-size: 2rem;
+}
+
+.card p {
+    margin-bottom: 2em;
+}
+
+.card a {
+    padding: 1em 2em;
+    border: 1px solid var(--black);
+}
+
+.card a:hover {
+    color: skyblue;
+    border: 1px solid skyblue;
+    background: var(--dark-blue);
+}
+
+i {
+    color: #f7f7f7;
+}
+
+@media screen and (min-width: 900px) {
+    .floats {
+        background: var(--off-white);
+        height: 60dvh;
+    }
+
+    .card {
+        width: 50%;
+        float: left;
+    }
+    .card + .card {
+        margin-top: 6rem;
+    }
+    .clear {
+        clear: both;
+    }
+    .container {
+        width: 80%;
+    }
+}
+
+footer i {
+    margin-top: 2em;
+}
+
+footer ul li {
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        height: 350dvh;
+    }
+}

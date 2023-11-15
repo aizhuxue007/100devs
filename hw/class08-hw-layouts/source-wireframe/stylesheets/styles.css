@@ -1,0 +1,236 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: rgba(37, 53, 71, 1);
+    --light: rgba(243, 247, 252, 1);
+    --light-blue: rgba(217, 228, 236, 1);
+    --white: rgba(255, 255, 255, 1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+}
+
+.desktop:link,
+.desktop:visited {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.mobile-nav {
+    padding: 1.5em;
+    border-bottom: 2px solid var(--light-blue);
+    margin-bottom: 3em;
+}
+
+.hamburger {
+    width: 10%;
+    margin-left: 2em;
+}
+
+.logo-container {
+    width: 90%;
+    float: right;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container {
+    padding: 0 1.5em;
+}
+
+.tagline {
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+.input {
+    padding: 0.75em;
+    border-radius: 10px;
+    width: 95%;
+}
+
+input {
+    background: var(--light-blue);
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    outline: none;
+}
+
+
+.cta {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    background: var(--dark);
+    margin-bottom: 2em;
+}
+
+main > p {
+    margin-bottom: 2em;
+}
+
+.responsive-img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    line-height: 1.75rem;
+    color: var(--dark);
+    margin-bottom: 1.12em;
+}
+
+figure {
+    margin: 2em 0;
+    text-align: center;
+}
+
+figure:last-child {
+    margin-bottom: 2em;
+}
+
+.greater-than-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 0.1em;
+    vertical-align: center;
+    position: relative;
+    top: 1px;
+}
+
+figure h2 {
+    margin: 2.5em 0 0.75em 0;
+}
+
+@media screen and (min-width: 700px) {
+    .desktop-nav {
+        display: block;
+        padding: 3em;
+        border-bottom: 2px solid var(--light-blue);
+    }
+
+    .logo {
+        float: left;
+        font-size: 2rem;
+        position: relative;
+        bottom: 0.5em;
+    }
+
+    .desktop-nav a:link,
+    .desktop-nav a:visited {
+        text-decoration: none;
+        color: var(--dark);
+    }
+
+    body > header > nav > div.desktop-nav > a:link,
+    body > header > nav > div.desktop-nav > a:visited {
+        color: var(--white);
+    } 
+
+    .desktop-nav ul {
+        list-style-type: none;
+        float: left;
+        position: relative;
+        left: 2em;
+    }
+
+    .desktop-nav a:hover {
+        color: var(--light-blue);
+    }
+
+    .desktop-nav li {
+        float: left;
+    }
+
+    .desktop-nav li + li {
+        margin-left: 1.5em;
+    }
+
+    .desktop-nav li:last-child {
+        margin-right: 1.5em;
+    }
+
+    .tagline {
+        margin-top: 3em;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .cta-btn,
+    .cta-bta a,
+    .cta-bta a:link,
+    .cta-bta a:visited {
+        float: right;
+        padding: 0.5em 1.2em;
+        position: relative;
+        color: white;
+        bottom: 2em;
+        border-radius: 10px;
+        top: -10px;
+    }
+
+    .hero {
+        clear: both;
+    }
+
+    .hero section {
+        width: 40%;
+        float: left;
+        margin-left: 2em;
+    }
+
+    .img-container--center{
+        width: 55%;
+        float: right;
+        position: relative;
+        top: 400px;
+    }
+
+    body > section.product-features.container {
+        clear: both;
+    }
+
+    .cta {
+        display: inline-block;
+        width: 100px;
+    }
+    
+   .product-features > figure {
+        width: 25%;
+        float: left;
+    }
+
+    .product-details figure {
+        clear: both;
+        background: var(--white);
+    }
+    
+
+    .product-details figure{
+        padding: 2em;
+    }
+}
